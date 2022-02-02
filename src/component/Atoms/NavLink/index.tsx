@@ -5,7 +5,7 @@ import "./NavLink.scss";
 type LinkProps = {
   label: string;
   to: string;
-  imgSrc: string;
+  imgSrc?: string;
 };
 
 export const NavLink: React.FC<LinkProps> = ({ label, to, imgSrc }) => {
