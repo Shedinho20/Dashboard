@@ -13,8 +13,8 @@
   &::-webkit-scrollbar {
     width: 0 !important;
   }
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   @include tablet {
     display: none;
   }
