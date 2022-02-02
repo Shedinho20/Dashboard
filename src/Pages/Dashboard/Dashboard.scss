@@ -63,7 +63,7 @@
     display: grid;
     grid-template-columns: 2fr 1.4fr;
     grid-gap: 2rem;
-    @include tablet {
+    @include tablet2 {
       grid-template-columns: 1fr;
     }
 
@@ -82,7 +82,7 @@
     }
     h3:last-child {
       margin-left: 2rem;
-      @include tablet {
+      @include tablet2 {
         display: none;
       }
     }
@@ -90,7 +90,7 @@
   .sectionHeaderContainer2 {
     display: none;
     justify-content: space-between;
-    @include tablet {
+    @include tablet2 {
       display: flex;
     }
     h3 {
