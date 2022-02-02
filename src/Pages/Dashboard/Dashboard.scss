@@ -107,6 +107,7 @@
   }
   .progress {
     display: flex;
+    cursor: pointer;
     .progressIcon {
       flex: 0.8;
       display: flex;
