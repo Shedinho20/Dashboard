@@ -1,0 +1,68 @@
+@import "../../../styles/Screen.scss";
+
+.notifications {
+  background-color: var(--rightNav-color);
+  position: fixed;
+  width: 20%;
+  color: var(--textNeutral-color);
+  height: 100%;
+  font-family: var(--Poppins);
+  overflow: scroll;
+  right: 0;
+  padding: 45px 20px;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  .nofificationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icons {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      .bellIcon {
+        position: relative;
+        .notificationCount {
+          position: absolute;
+          top: -2px;
+          right: -3px;
+          background-color: red;
+          font-size: 6px;
+          width: 10px;
+          height: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          padding-top: 1px;
+          color: #fff;
+        }
+      }
+    }
+    .avatar {
+      flex: 2;
+      display: flex;
+      justify-content: flex-end;
+
+      .avatarContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 72px;
+        height: 72px;
+        background: #eaeefd;
+        border-radius: 16px;
+      }
+    }
+  }
+  .notificationsMessageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 1rem;
+  }
+}

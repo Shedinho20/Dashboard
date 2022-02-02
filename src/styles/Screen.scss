@@ -1,0 +1,16 @@
+// Tablets and small desktops
+$screen-md-min: 950px;
+
+// Phones
+$screen-ph-min: 580px;
+
+@mixin tablet {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin phone {
+  @media (max-width: #{$screen-ph-min}) {
+    @content;
+  }
+}

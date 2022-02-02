@@ -1,0 +1,17 @@
+@import "../../styles/Screen.scss";
+
+.page-container {
+  width: 60%;
+  margin: 0 20%;
+  padding: 45px 50px;
+  @include tablet {
+    width: 75%;
+    margin-left: 25%;
+    margin-right: 0%;
+  }
+  @include phone {
+    width: 100%;
+    margin: 0%;
+    padding: 45px 30px;
+  }
+}

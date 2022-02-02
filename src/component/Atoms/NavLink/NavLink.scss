@@ -1,0 +1,67 @@
+@import "../../../styles/Screen.scss";
+
+.navLinkactive {
+  font-family: var(--Poppins);
+  text-decoration: none;
+  color: white;
+  padding: 0.7rem;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  transition: all 0.3s ease-in;
+  background: linear-gradient(90deg, #1c4185 68.23%, rgba(28, 65, 133, 0) 100%);
+  border-left: 6px solid white;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  img {
+    margin-right: 0.6em;
+    @include tablet {
+      width: 18px;
+    }
+  }
+  @include tablet {
+    font-size: 0.8rem;
+  }
+}
+
+.navLinkinactive {
+  text-decoration: none;
+  font-family: var(--Poppins);
+  color: var(--textNeutral-color);
+  padding: 0.7rem;
+  padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  transition: all 0.3s ease-in;
+  font-size: 0.9rem;
+  white-space: nowrap;
+
+  img {
+    margin-right: 1.5em;
+    @include tablet {
+      width: 18px;
+    }
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #1c4185 68.23%, rgba(28, 65, 133, 0) 100%);
+    border-left: 6px solid white;
+    color: white;
+  }
+  @include tablet {
+    font-size: 0.8rem;
+  }
+}
+
+.team {
+  color: white;
+  font-family: var(--Poppins);
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}

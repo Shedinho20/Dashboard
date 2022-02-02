@@ -1,0 +1,12 @@
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--textMain-color);
+  }
+}

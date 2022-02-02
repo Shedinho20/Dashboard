@@ -1,0 +1,10 @@
+.button {
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s linear;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

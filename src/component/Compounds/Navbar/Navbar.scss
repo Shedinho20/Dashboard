@@ -1,0 +1,65 @@
+@import "../../../styles/Screen.scss";
+
+.navbar {
+  background-color: var(--main-color);
+  position: fixed;
+  left: 0;
+  width: 20%;
+  color: var(--textNeutral-color);
+  height: 100%;
+  font-family: var(--Poppins);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    width: 0 !important;
+  }
+
+  @include phone {
+    display: none;
+  }
+  @include tablet {
+    width: 25%;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 41px;
+    h3 {
+      letter-spacing: -1.4px;
+      margin-left: 5px;
+      span {
+        background: #1c4185;
+        padding: 0 0.2em;
+      }
+      @include tablet {
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .arrowContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .arrow {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 16px;
+    }
+    h3 {
+      width: 70%;
+      font-size: 1rem;
+      text-align: center;
+      line-height: 22px;
+      font-family: var(--Dm-San);
+      @include tablet {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "./Theme.scss";
+@import "./Screen.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--page-background);
+}
+
+.App {
+  width: 100vw;
+  color: var(--textMain-color);
+  font-family: var(--Poppins);
+  display: flex;
+}
