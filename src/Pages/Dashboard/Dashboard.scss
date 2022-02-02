@@ -79,6 +79,9 @@
       font-weight: 500;
       font-size: 18px;
       color: var(--textMain-color);
+      @include tablet2 {
+        margin-bottom: 2rem;
+      }
     }
     h3:last-child {
       margin-left: 2rem;
@@ -93,16 +96,12 @@
     @include tablet2 {
       display: flex;
     }
+
     h3 {
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       color: var(--textMain-color);
-    }
-    h3:last-child {
-      @include tablet {
-        display: none;
-      }
     }
   }
   .progress {
@@ -123,6 +122,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
+        padding: 1rem;
       }
     }
     .progressTextContainer {

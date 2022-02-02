@@ -26,9 +26,12 @@ export const Navbar = () => {
       <h3 className="team">Teams</h3>
       <Spacer height={10} />
       {teams.map((link, i) => (
-        <div key={i}>
+        <div key={i} style={{ position: "relative" }}>
           <Spacer height={10} />
-          <NavLink to={link.to} label={link.label} imgSrc={link.imgSrc} />
+          <div>
+            <NavLink to={link.to} label={link.label} imgSrc={link.imgSrc} />
+          </div>
+          {link.label === "Message" ? <p className="messageCount">2</p> : null}
         </div>
       ))}
       <Spacer height={40} />

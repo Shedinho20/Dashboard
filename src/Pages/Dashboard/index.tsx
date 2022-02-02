@@ -33,7 +33,7 @@ export const Dashboard = () => {
             <PiChart />
           </Card>
         </div>
-        <Spacer height={50} />
+        <Spacer height={40} />
         <div className="sectionHeaderContainer">
           <h3 className="sectionHeader" style={{ flex: 2 }}>
             Your documents
@@ -50,7 +50,7 @@ export const Dashboard = () => {
               padding="20px 30px"
               backgroundcolor="#fff"
             />
-            <Spacer width={20} height={20} />
+            <Spacer height={20} />
             <Document
               title="Submisson Mobile Programming"
               subTitle="01 Jan, 18:20PM"
@@ -58,7 +58,7 @@ export const Dashboard = () => {
               padding="20px 30px"
               backgroundcolor="#fff"
             />
-            <Spacer width={20} height={20} />
+            <Spacer height={20} />
             <Document
               title="Submisson Mobile Programming"
               subTitle="01 Jan, 18:20PM"
@@ -68,11 +68,7 @@ export const Dashboard = () => {
             />
           </div>
           <div className="sectionHeaderContainer2">
-            <h3 className="sectionHeader" style={{ flex: 2 }}>
-              Progress Learning
-            </h3>
-            <Spacer width={40} height={40} />
-            <h3 style={{ flex: 1.5 }}>Progress Learning</h3>
+            <h3 className="sectionHeader">Progress Learning</h3>
           </div>
           <Card flex="1.5" padding="1rem">
             <div className="progress">
