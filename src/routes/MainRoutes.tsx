@@ -1,11 +1,13 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
+import { Dashboard } from "../Pages";
 import { AppRoutes } from "./AppRoutes";
 
 export const MainRoutes = () => {
   return (
     <Routes>
-      <Route path="/*" element={<AppRoutes />} />
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
